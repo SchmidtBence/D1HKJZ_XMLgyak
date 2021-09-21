@@ -1,1 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 
+<Konferencia>
+    <cim>Cím</cim>
+    <dátum>2019.09.21</dátum>
+    <Helyszín>Szeged</Helyszín>
+    <előadó>
+    	<név>Béla</név>
+    	<adószám>34789610</adószám>
+    	<lakcím>Körösladány Damjanich u20/1</lakcím>
+    </előadó>
+	<Hallgatok>
+		<Hallgató>
+			<név>János</név>
+			<lakcím>Miskolc</lakcím> 
+		</Hallgató>
+		<Hallgató>
+			<név>Benedek</név>
+			<lakcím>Budapest</lakcím> 
+		</Hallgató>
+	</Hallgatok>
+    
+      
+</Konferencia>
