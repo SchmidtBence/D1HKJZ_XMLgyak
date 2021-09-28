@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE books SYSTEM "books.dtd">
+
+<books>
+	<book id="prob1">
+		<title>HP 1resz</title>
+		<published>2002</published>
+		<publisher>hp studis</publisher>
+		<author>J.K.Rowling</author>
+		<author>J.R.Rowlin</author>
+		<abstract>XML for HP</abstract>
+	</book>
+	
+	<book id="prob2">
+		<title>HP 2resz</title>
+		<published>2004</published>
+		<publisher>hp studis</publisher>
+		<author>J.K.Rowling</author>
+		<author>J.R.Rowlin</author>
+		<abstract>XML for HP2</abstract>
+	</book>
+	
+</books>
