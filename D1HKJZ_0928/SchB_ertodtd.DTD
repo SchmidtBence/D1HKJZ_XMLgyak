@@ -1,4 +1,3 @@
-<!DOCTYPE model [
 	<!ELEMENT model
 				(A*, B*,C*,A_B*)>
 	<!ELEMENT A (Ab*, Ac)>
@@ -16,10 +15,9 @@
 	<!ELEMENT Bbx (#PCDATA)>
 	<!ELEMENT Bby (#PCDATA)>
 	<!ELEMENT C (Cb)>
-	<!ATTLIST C Ca ID REQUIRED>
+	<!ATTLIST C Ca ID #REQUIRED>
 	<!ELEMENT Cb (#PCDATA)>
 	<!ELEMENT A_B (A_Bc)>
 	<!ATTLIST A_B A_B_a IDREF #IMPLIED>
 	<!ATTLIST A_B A_B_b IDREF #IMPLIED>
 	<!ELEMENT A_Bc (#PCDATA)>
-]>
