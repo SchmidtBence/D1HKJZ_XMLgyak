@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE books SYSTEM "SchB_konyv.dtd">
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespacesSchemaLocation="SchB_konyv.xsd">
+	<book id="konyv1">
+		<title>Bemutatkozik a HTML5</title>
+		<published>2013</published>
+		<publisher>Perfact-Pro Kft</publisher>
+		<author>Bruce Lawson</author>
+		<author>Remy Sharp</author>
+		<abstract>HTML5-ről információk</abstract>
+	</book>
+	
+	<book id="konyv2">
+		<title>Excel a gyakorlatban</title>
+		<published>2015</published>
+		<publisher>BBS-Info Kft</publisher>
+		<author>Bártfai Barnabás</author>
+		<abstract>Excel a gyakorlatban példákal</abstract>
+	</book>
+
+	<book id="konyv3">
+		<title>Digitális hajsza 2</title>
+		<published>2020</published>
+		<publisher>Fehér Krisztián Dezső</publisher>
+		<author>Dr. Kökényesi-Bartos Attila</author>
+		<abstract>Internetes zaklatók üldöznek minket, elkövetők honlapokat törnek fel vagy tesznek elérhetetlenné a kibertérben. </abstract>
+	</book>
+
+</books>
