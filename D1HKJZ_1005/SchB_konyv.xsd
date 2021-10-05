@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema xmlns:tns="http://www.example.org/BI_konyv" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/BI_konyv" elementFormDefault="qualified">
+<xs:schema xmlns:tns="http://www.example.org/SchB_konyv" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SchB_konyv" elementFormDefault="qualified">
 
 <xs:element name="konyvek">
 	<xs:complexType>
