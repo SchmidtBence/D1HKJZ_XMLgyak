@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE books SYSTEM "books.dtd">
+<!DOCTYPE books SYSTEM "SchB_konyv.dtd">
 
 <books>
-	<book id="prob1">
-		<title>HP 1resz</title>
-		<published>2002</published>
-		<publisher>hp studis</publisher>
-		<author>J.K.Rowling</author>
-		<author>J.R.Rowlin</author>
-		<abstract>XML for HP</abstract>
+	<book id="konyv1">
+		<title>Bemutatkozik a HTML5</title>
+		<published>2013</published>
+		<publisher>Perfact-Pro Kft</publisher>
+		<author>Bruce Lawson</author>
+		<author>Remy Sharp</author>
+		<abstract>HTML5-ről információk</abstract>
 	</book>
 	
-	<book id="prob2">
-		<title>HP 2resz</title>
-		<published>2004</published>
-		<publisher>hp studis</publisher>
-		<author>J.K.Rowling</author>
-		<author>J.R.Rowlin</author>
-		<abstract>XML for HP2</abstract>
+	<book id="konyv2">
+		<title>Excel a gyakorlatban</title>
+		<published>2015</published>
+		<publisher>BBS-Info Kft</publisher>
+		<author>Bártfai Barnabás</author>
+		<abstract>Excel a gyakorlatban példákal</abstract>
 	</book>
-	
+
+	<book id="konyv3">
+		<title>Digitális hajsza 2</title>
+		<published>2020</published>
+		<publisher>Fehér Krisztián Dezső</publisher>
+		<author>Dr. Kökényesi-Bartos Attila</author>
+		<abstract>Internetes zaklatók üldöznek minket, elkövetők honlapokat törnek fel vagy tesznek elérhetetlenné a kibertérben. </abstract>
+	</book>
+
 </books>
