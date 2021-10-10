@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE mozi SYSTEM "SchB_mozi1.dtd">
+
+<mozi>
+
+
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_67jb" nev="alex"/>
+        <szinesz id="u5q_4xm_2jb" nev="Madison_Ivy"/>
+        <iro id="trv_4xm_2jb"/>
+    </film>
+
+    <film id="txn_nxm_3jb" mufaj="Vigjatek">
+        <rendezo id="nzk_4xm_72jb" nev="George"/>
+        <rendezo id="fcki_4xm_2jb" nev="Jeff"/>
+        <szinesz id="u5q_4xm_26jb" nev="James"/>
+        <iro id="trv_4xm_21jb"/>
+    </film>
+
+</mozi> 

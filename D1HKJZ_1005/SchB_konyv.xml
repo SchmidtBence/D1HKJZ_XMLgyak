@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE books SYSTEM "SchB_konyv.dtd">
 <books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespacesSchemaLocation="SchB_konyv.xsd">
 	<book id="konyv1">
 		<title>Bemutatkozik a HTML5</title>

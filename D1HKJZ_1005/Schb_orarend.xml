@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!DOCTYPE orarend SYSTEM "SchB_orarend.dtd">
-
-<orarend>
-  <hétfő>
+<orarend xsi:noNamespaceSchemaLocation="SchB_orarend.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <ora id="web" tipus="gyakelmélet">
           <targy>WEB-es alkalmazások Java </targy>
           <idopont>
@@ -48,8 +45,6 @@
             <oktato>Tamás Judit</oktato>
             <szak>Mérnökinformatikus</szak>
         </ora>
-  </hétfő>
-  <Kedd>
         <ora id="web" tipus="gyakelmélet">
           <targy>WEB-es alkalmazások Java </targy>
           <idopont>
@@ -105,8 +100,6 @@
            <oktato>Dr. Dudás László</oktato>
            <szak>Mérnökinformatikus</szak>
         </ora>
-  </Kedd>
-  <szerda>
         <ora id="szoftteszt" tipus="gyak">
             <targy>Szoftvertesztelés</targy>
             <idopont>
@@ -162,6 +155,5 @@
               <oktato>Dr. Kulcsárné Forrai Móni</oktato>
               <szak>Mérnökinformatikus</szak>
         </ora>
-  </szerda>
 
 </orarend>
