@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<nevjegykartyak xsi:noNamespaceSchemaLocation="SchB_nevjegykartya.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <nevjegykartya>
+        <nev>Schmidt Bence</nev>
+        <ceg>
+            <nev>Henkel</nev>
+            <cim>
+                <iranyitoszam>5516</iranyitoszam>
+                <varos>Körösladány</varos>
+                <utca>Henkel park</utca>
+                <hazszam>4</hazszam>
+            </cim>
+            <telefonszam>0620/111-2266</telefonszam>
+            <weblap>https://www.henkel.com/</weblap>
+        </ceg>
+        <beosztas>Részlegvezető</beosztas>
+        <telefonszam>0670/999-4505</telefonszam>
+        <email>schmidt.bence97@gmail.com</email>
+    </nevjegykartya>
+
+    <nevjegykartya>
+        <nev>Nagy Bence</nev>
+        <ceg>
+            <nev>Bosch</nev>
+            <cim>
+                <iranyitoszam>3500</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Rober Bosch park</utca>
+                <hazszam>12</hazszam>
+            </cim>
+            <telefonszam>0620/456-7890</telefonszam>
+            <weblap>https://www.bosch.hu</weblap>
+        </ceg>
+        <beosztas>Szakács</beosztas>
+        <telefonszam>0630/333-01234</telefonszam>
+        <email>nagy.bence@gmail.com</email>
+    </nevjegykartya>
+</nevjegykartyak>

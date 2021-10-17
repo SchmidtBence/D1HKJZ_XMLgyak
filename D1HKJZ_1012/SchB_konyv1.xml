@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<konyvek xsi:noNamespaceSchemaLocation="SchB_konyv1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <konyv isbn="0462726935">
+        <cim>A Gyűrűk Ura</cim>
+        <szerzo>J. R. R. Tolkien</szerzo>
+        <szereplo>
+            <nev>Legolas</nev>
+            <baratja>Aragorn</baratja>
+            <szuletett>2000-01-03</szuletett>
+            <jellemzes>Ő is és a népének is voltak összetűzései a törpökel de mégis Gloin fia gimlivel szorosbarátség volt köztük</jellemzes>
+        </szereplo>
+        <szereplo>
+            <nev>Gimli</nev>
+            <baratja>Legolas</baratja>
+            <szuletett>2879</szuletett>
+            <jellemzes>Az utolsó megmaradt törpe aki segit az emberiségnek.</jellemzes>
+        </szereplo>
+    </konyv>
+</konyvek>
