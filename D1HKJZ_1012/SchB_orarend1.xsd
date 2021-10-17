@@ -8,6 +8,7 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
     <xs:complexType name="oraTipus">
         <xs:sequence>
             <xs:element name="targy" type="xs:string" />
@@ -19,12 +20,15 @@
         <xs:attribute name="id" type="xs:int" use="required"/>
         <xs:attribute name="tipus" type="oraTipusTipus" default="eloadas"/>
     </xs:complexType>
+
     <xs:simpleType name="oraTipusTipus">
         <xs:restriction base="xs:string">
-            <xs:enumaration value="eloadas"/>
-            <xs:enumaration value="Gyakorlat"/>
+            <xs:enumeration value="Elmélet"/>
+            <xs:enumeration value="Gyakorlat"/>
         </xs:restriction>
     </xs:simpleType>
+
+
     <xs:complexType name="idopontTipus">
             <xs:sequence>
                 <xs:element name="nap" type="napTipus"/>
@@ -32,20 +36,21 @@
                 <xs:element name="ig" type="idopontOraTipus"/>
             </xs:sequence>
     </xs:complexType>
+
     <xs:simpleType name="napTipus">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="hétf?"/>
-            <xs:enumeration value="kedd"/>
-            <xs:enumeration value="szerda"/>
-            <xs:enumeration value="csütörtök"/>
-            <xs:enumeration value="péntek"/>
+            <xs:enumeration value="Hétf?"/>
+            <xs:enumeration value="Kedd"/>
+            <xs:enumeration value="Szerda"/>
+            <xs:enumeration value="Csütörtök"/>
+            <xs:enumeration value="Péntek"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="idopontOraTipus">
         <xs:restriction base="xs:positiveInteger">
             <xs:minInclusive value="8"/>
-            <xs:maxInclusive value="18"/>
+            <xs:maxInclusive value="20"/>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>
