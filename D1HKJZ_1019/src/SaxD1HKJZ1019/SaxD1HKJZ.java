@@ -20,7 +20,7 @@ public class SaxD1HKJZ {
 
             SaxHandler handler = new SaxHandler();
 
-            saxParser.parse(new File("szemelyekBBKHXF.xml"), handler);
+            saxParser.parse(new File("szemelyekD1HKJZ.xml"), handler);
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
         }
