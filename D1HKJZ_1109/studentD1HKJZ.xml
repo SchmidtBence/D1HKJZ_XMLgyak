@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="studentD1HKJZ.xsd">
+    <student id="01">
+        <keresztnév>Bence</keresztnév>
+        <vezetéknév>Schmidt</vezetéknév>
+        <becenév>Bencus</becenév>
+        <kor>24</kor>
+    </student>
+    <student id="02">
+        <keresztnév>Máté</keresztnév>
+        <vezetéknév>Nagy</vezetéknév>
+        <becenév>Mate</becenév>
+        <kor>23</kor>
+    </student>
+    <student id="03">
+        <keresztnév>Gábor</keresztnév>
+        <vezetéknév>Baranyai</vezetéknév>
+        <becenév>Gabesz</becenév>
+        <kor>21</kor>
+    </student>
+</class>
