@@ -9,52 +9,47 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
 import java.io.File;
 import java.io.IOException;
 
 public class DOMQueryD1hkjz {
     public static void main(String[] args) {
         try {
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder = factory.newDocumentBuilder();
-            // fájl beolvasása
-            Document document = builder.parse(new File("XMLD1hkjz.xml"));
-            document.getDocumentElement().normalize();
-            //Xpath készítése
-            XPath xPath= XPathFactory.newInstance().newXPath();
+                NodeList nodeList;
 
-            //meg kell adni az elérési út kifejezést és a csomópont listát
+                DocumentBuilderFactory factory =DocumentBuilderFactory.newInstance();
+                DocumentBuilder builder=factory.newDocumentBuilder();
+                //Fájl beolvasása
+                Document document=builder.parse(new File("XMLD1hkjz.xml"));
+                document.getDocumentElement().normalize();
 
-            //Összes versenyző lekérdezése
-            //String expression="root/Versenyzok/Versenyzo";
-            //az utolso versenyzo lekérdezése
-            String expression="root/Versenyzok/Versenyzo[last()]";
+                //Aktuális elem meghatározása
+                nodeList=document.getElementsByTagName("Hal_Tipus");
 
-            //Készítsünk egy listát, majd a Path kifejezést meg kell írni és ki kell értékelni.
-            NodeList nodeList=(NodeList) xPath.compile(expression).evaluate(document, XPathConstants.NODESET);
+                for(int i =0;i<nodeList.getLength();i++){
+                    Node node=nodeList.item(i);
 
-            //A for ciklus segítségével a NodeList csomópontjait végig kell iterrálni.
-            for (int i=0;i<nodeList.getLength();i++){
-                Node node=nodeList.item(i);
-                System.out.println ("\naktuális elem: " + node.getNodeName());
+                    //Hal tipusok adatainak kiirása
+                    if(node.getNodeType()==Node.ELEMENT_NODE){
+                        Element element=(Element) node;
+                        String tipus= element.getElementsByTagName("Tipusa").item(0).getTextContent();
 
-                //meg kell vizsgálni a cssomópontot, az subelement tesztelése megtörtént
-                if(node.getNodeType() == Node.ELEMENT_NODE && node.getNodeName().equals("Versenyzo")){
-                    Element element=(Element) node;
-                    System.out.println("Versenyzo id: " + element.getAttribute("VAzon"));
-                    System.out.println("Szektorazonositó id: " + element.getAttribute("Szektorazon"));
-                    System.out.println("Díj id: " + element.getAttribute("Dazon"));
-                    System.out.println("VersenyzőNév: "
-                            + element.getElementsByTagName("VNev").item(0).getTextContent());
+                        if(tipus.equals("VedettHal"))
+                        {
+                            System.out.println("\nAktuális elem: " + node.getNodeName());
+                            System.out.println("-------");
+                            System.out.println("");
+                        System.out.println("Hal tipus id: " + element.getAttribute("index"));
+                            System.out.println("Ragadozó: " + element.getElementsByTagName("Ragadozo").item(0).getTextContent());
+                            System.out.println("Tipusa: " + element.getElementsByTagName("Tipusa").item(0).getTextContent());
+                        System.out.println("Oshonos: " + element.getElementsByTagName("Oshonos").item(0).getTextContent());
 
+                    }
                 }
             }
-        } catch (ParserConfigurationException | XPathExpressionException | IOException | SAXException e){
+        } catch (ParserConfigurationException | IOException | SAXException e){
             e.printStackTrace();
         }
     }
 }
+
