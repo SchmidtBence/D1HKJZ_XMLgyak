@@ -207,7 +207,7 @@
     </xs:simpleType>
     <xs:simpleType name="szulido">
         <xs:restriction base="xs:string">
-            <xs:pattern value="\d{4}[.]\d{2}[.]\d2}"/>
+            <xs:pattern value="\d{4}[.]\d{2}[.]\d{2}" />
             <xs:length value="10"/>
         </xs:restriction>
     </xs:simpleType>
